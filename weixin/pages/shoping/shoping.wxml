@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+   我是购物页面
+  </view>
+ 
+</view>

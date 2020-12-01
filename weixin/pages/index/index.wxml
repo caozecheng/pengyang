@@ -1,16 +1,20 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="page-body">
+    <view class="page-section">
+      <view class="weui-input">
+        <view class="yuan"> </view>
+        <view class="shu"> | </view>
+        <image class="sel1" src="../../images/sel.png" alt="" />
+        <input class="sel" maxlength="10" placeholder="想找什么？快搜索一下" />
+      </view>
+    </view>
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper> 
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <view>{{ msg }}</view>
-  <button type="primary" bindtap="logBtn">跳转到日志界面</button>
-  <button bindtap="clickMe" :show="isShow">点击我</button>
 </view>

@@ -1,34 +1,48 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/ivew/pages1/pages1"
+    "pages/classify/classify",
+    "pages/shoping/shoping",
+    "pages/my/my"
   ],
   "tabBar": {
-    "color": "res",
-    "selectedColor": "green",
-    "backgroundColor": "pink",
-    "list": [
-      {
+    "color": "#6e6d6b",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#292929",
+    "list": [{
         "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/selhome.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/footer-icon-02.png",
+        "selectedIconPath": "images/footer-icon-02-active.png",
+        "text": "分类"
       },
       {
-        "pagePath": "pages/ivew/pages1/pages1",
-        "text": "测试"
+        "pagePath": "pages/shoping/shoping",
+        "iconPath": "images/footer-icon-03.png",
+        "selectedIconPath": "images/footer-icon-03-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/footer-icon-04.png",
+        "selectedIconPath": "images/footer-icon-04-active.png",
+        "text": "我的"
       }
     ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "曹泽成",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

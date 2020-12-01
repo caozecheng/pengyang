@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+   我是我的页面
+  </view>
+ 
+</view>
